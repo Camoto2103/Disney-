@@ -1,0 +1,209 @@
+:root {
+    /*Primary*/
+  
+    /*Text*/
+    --veryDarkDesaturatedBlue: hsl(238, 29%, 16%);
+    --softRed: #FFF;
+    /*Background gradient:*/
+    --softViolet: hsl(273, 75%, 66%);
+    --softBlue: hsl(240, 73%, 65%);
+  
+    /*Neutral*/
+  
+    /*Text*/
+    --veryDarkDrayishBlue: hsl(237, 12%, 33%);
+    --darkGrayishBlue: hsl(240, 6%, 50%);
+    /*Dividers*/
+    --lightGrayishBlue: hsl(240, 5%, 91%);
+  }
+
+  @font-face {
+    font-family: Roboto;
+    src: url(../archivos/fonts/roboto/Roboto-Regular.woff);
+  }
+  
+  * {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container-fill{
+    display: flex;
+    justify-content: center;
+    font-family: Roboto;
+    padding: 5px;
+    font-size: 18px;
+  }
+  
+  .texto {
+    /* width: 500px;
+    height: 500px; */
+  }
+  
+  /* .caja {
+    background: url(../images/illustration-box-desktop.svg) center/100% no-repeat;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 210px;
+    left: -120px;
+  }
+   */
+  .item {
+    width: 98vw;
+    border-bottom: 1px solid var(--lightGrayishBlue);
+    border-radius: 5px;
+  }
+  
+  .item__pregunta {
+    width: 96vw;
+    padding: 20px 0px 20px 5px;
+    color:#002b8c;
+    font-family: Roboto;
+  }
+  
+  /* .item__pregunta:hover {
+    color: var(--softRed);
+  } */
+  
+  .item__respuesta {
+    color: var(--darkGrayishBlue);
+    font-size: 14px;
+    /* margin-right: 40px; */
+    padding-left: 10px;
+    padding-bottom: 5px;
+    font-family: Roboto;
+    display: none;
+  }
+  
+  .item__respuesta_activa {
+    width: 100vw;
+    font-size: 14px;
+    /* margin-right: 40px; */
+    padding-bottom: 5px;
+    display: block;
+  }
+
+  .config-img{
+    width: 70vw;
+    margin: 20px 0px;
+    min-width: 330px;
+    max-width: 700px;
+  }
+
+  .content-img-proceso{
+    display: flex;
+    justify-content: center;
+  }
+
+  .pasos-cancelacion-centrar{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+  }
+
+  .pasos-cancelacion{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 5px #0004;
+    width: 320px;
+    border-radius: 5px;
+    align-items: center;
+    padding: 5px;
+    margin: 15px 20px 0px 20px;
+  }
+
+  .space-div-pasos{
+    margin: 20px 0px;
+  }
+
+  .titulo-pasos{
+    font-size: 30px;
+    font-weight: bold;
+    color: #002b8c;
+  }
+
+  .listado-cancelacion-circle > li {
+    color: #002b8c;
+    list-style: disc !important;
+    width: 240px;
+    margin-top: 5px;
+  }
+
+  .listado-cancelacion-number > li {
+    color: #002b8c;
+    list-style: decimal !important;
+    width: 240px;
+    margin-top: 5px;
+  }
+
+  
+  .item__click {
+    display: inline-block;
+    background: url(../img/icon-arrow-down.svg) center/70% no-repeat;
+    height: 20px;
+    width: 20px;
+  }
+  
+  .marco {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  h1 {
+    font-size: 35px;
+    margin-top: 35px;
+    padding: 20px 0px 10px 0px;
+  }
+  
+  /* @media (max-width: 1090px) {
+    .caja {
+      position: absolte;
+      width: 320px;
+      height: 320px;
+      background: url(../images/illustration-woman-online-mobile.svg) center/100%
+        no-repeat;
+      top: -172px;
+      left: 22.5px;
+    }
+  
+    .contenedor {
+      margin: 150px 0px 150px 0px;
+      max-width: 400px;
+    }
+  
+    .imagen {
+      width: 400px;
+      height: 120px;
+      background: url(../images/bg-pattern-mobile.svg) top/75% no-repeat no-repeat;
+      background-position: 50px -10px;
+    }
+  
+    .texto {
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    h1 {
+      margin-top: 0;
+      padding: 20px 0px 10px 0px;
+    }
+  
+    .item {
+      width: 330px;
+    }
+  
+    .item__pregunta {
+      width: 330px;
+    }
+  
+    .item__respuesta {
+      width: 330px;
+    }
+  } */
